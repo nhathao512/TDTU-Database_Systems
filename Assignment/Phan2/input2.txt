@@ -1,0 +1,3 @@
+R = {ABCDEG}
+F = {AB -> C, C -> A, BC -> D, D -> EG, CG -> BD, ACD -> B, CD -> AG}
+X = CG

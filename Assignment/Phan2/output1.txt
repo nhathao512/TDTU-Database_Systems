@@ -1,0 +1,82 @@
+NhaDauTu 
+maNDT
+tenNDT
+SoVon
+PRIMARY KEY: maNDT
+
+DuAn 
+maDA
+tenDA
+TongVon
+PRIMARY KEY: maDA
+
+NhanVien 
+maNV
+tenNV
+sdtNV
+DiaChi
+PRIMARY KEY: maNV
+
+PhongBan 
+maPB
+tenPB
+emailPB
+sdtPB
+PRIMARY KEY: maPB
+
+LapTrinhVien 
+maNV
+emailLTV
+ChuyenMon
+PRIMARY KEY: maNV
+
+TaiKhoan 
+tenTK
+MatKhau
+PRIMARY KEY: tenTK
+
+Designer 
+maNV
+KinhNghiem
+NgaySinh
+PRIMARY KEY: maNV
+
+NguoiThan 
+maNV
+tenNT
+sdtNT
+PRIMARY KEY: maNV
+
+NhaDauTu-DuAn: RELATIONSHIP(N-N) Create Entity: DauTu
+
+DauTu
+PRIMARY KEY: maNDT, maDA
+FOREIGN KEY: maNDT, maDA
+
+DuAn-NhanVien: RELATIONSHIP(1-N)
+
+Gom
+PRIMARY KEY: maDA
+FOREIGN KEY: maNV
+
+PhongBan-NhanVien: RELATIONSHIP(1-N)
+
+Thuoc
+PRIMARY KEY: maPB
+FOREIGN KEY: maNV
+
+LapTrinhVien-TaiKhoan: RELATIONSHIP(1-1)
+
+SoHuu
+PRIMARY KEY: maNV
+FOREIGN KEY: tenTK
+
+Designer-NguoiThan: RELATIONSHIP(1-N)
+
+MoiQuanHe
+PRIMARY KEY: maNV
+FOREIGN KEY: maNV
+
+LapTrinhVien-NhanVien: RELATIONSHIP(Inheritance)
+
+Designer-NhanVien: RELATIONSHIP(Inheritance)

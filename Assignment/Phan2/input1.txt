@@ -1,0 +1,15 @@
+NhaDauTu maNDT tenNDT SoVon, maNDT
+DuAn maDA tenDA TongVon, maDA
+NhanVien maNV tenNV sdtNV DiaChi, maNV
+PhongBan maPB tenPB emailPB sdtPB, maPB
+LapTrinhVien maNV emailLTV ChuyenMon, maNV
+TaiKhoan tenTK MatKhau, tenTK
+Designer maNV KinhNghiem NgaySinh, maNV
+NguoiThan maNV tenNT sdtNT, maNV
+NhaDauTu-DuAn N-N DauTu
+DuAn-NhanVien 1-N Gom
+PhongBan-NhanVien 1-N Thuoc
+LapTrinhVien-TaiKhoan 1-1 SoHuu
+Designer-NguoiThan 1-N MoiQuanHe
+LapTrinhVien-NhanVien Inheritance
+Designer-NhanVien Inheritance
